@@ -61,7 +61,7 @@ class MainActivity : AppCompatActivity() {
                 updateUI(account)
             }
         } else {
-            Toast.makeText(this, task.exception.toString(), Toast.LENGTH_SHORT)
+            Toast.makeText(this, task.exception.toString(), Toast.LENGTH_SHORT).show()
         }
     }
 
@@ -74,7 +74,7 @@ class MainActivity : AppCompatActivity() {
                 intent.putExtra("name", account.displayName)
                 startActivity(intent)
             } else {
-                Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT)
+                Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
             }
         }
 
